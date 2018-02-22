@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{request.locale_name}}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ki_project web application">
+    <meta name="Serrones" content="ki_project">
+
+    <title>Ki Project with Flask Web Framework</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this project -->
+    <link href="static/theme.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+      <div class="container">
+        <div class="row">
+            <img class="logo img-responsive" src="static/keepi_logo_footer.png" alt="keepi">
+        </div>
+        <div class="row justify-content">
+            <a class="btn btn-warning btn-lg" href="http://127.0.0.1:5000/" role="button">New Deck</a>
+        </div>
+        <div class="row">
+            {% block content %}
+                <p>No content</p>
+            {% endblock content %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js" integrity="sha384-aBL3Lzi6c9LNDGvpHkZrrm3ZVsIwohDD7CDozL0pk8FwCrfmV7H9w8j3L7ikEv6h" crossorigin="anonymous"></script>
+    <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script>
+  </body>
+</html>

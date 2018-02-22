@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ki_project/__init__.py
+ki_project/ki_project.py
+ki_project.egg-info/PKG-INFO
+ki_project.egg-info/SOURCES.txt
+ki_project.egg-info/dependency_links.txt
+ki_project.egg-info/requires.txt
+ki_project.egg-info/top_level.txt
+ki_project/static/keepi_logo_footer.png
+ki_project/static/theme.css
+ki_project/templates/layout.jinja2
+ki_project/templates/random_decks.jinja2

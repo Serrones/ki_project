@@ -1,0 +1,18 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+    {% for item in random_deck %}
+            <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{ item['name'] }}</h5>
+                <ul class="list-group">
+                    <li class="list-group-item lista">Rarity: {{ item['rarity'] }}</li>
+                    <li class="list-group-item lista">Type: {{ item['type'] }}</li>
+                    <li class="list-group-item lista">{{ item['description'] }}</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+    {% endfor %}
+{% endblock content %}
